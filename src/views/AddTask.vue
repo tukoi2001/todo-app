@@ -4,11 +4,12 @@
     <form action="" @submit.prevent="handleSubmitAddTask">
       <div class="form-item">
         <label for="title">Title:</label>
-        <input type="text" id="title" v-model.trim="newTask.title" />
+        <input type="text" required id="title" v-model.trim="newTask.title" />
       </div>
       <div class="form-item">
         <label for="description">Description:</label>
         <textarea
+          required
           type="text"
           id="description"
           v-model.trim="newTask.description"
